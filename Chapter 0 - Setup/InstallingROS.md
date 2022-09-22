@@ -1,0 +1,1 @@
+Now we need to install ROS on our local system. There are severl steps here, so for an indepth guide [click here](http://wiki.ros.org/noetic/Installation/Ubuntu). My tutorial will be a little more bare bones compared to this one
