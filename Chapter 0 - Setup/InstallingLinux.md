@@ -13,4 +13,7 @@ The Solution that Worked, but Needed a Little Assistance:
    - You'll also need a USB drive with 8 GB of space to hold the Ubuntu image on it.
    - In order to download the image [Download it from this page](https://ubuntu.com/download/desktop).
    - While your image downloads, we need to make the USB a bootable device in Windows. In order to do this we need to:
-     - Install a program called [Roofus](https://rufus.ie/en/).
+     - Install a program called [Rufus](https://rufus.ie/en/).
+     - Once Rufus has installed, open it. In the GUI make sure you select your USB that you want to install the Ubuntu Image on. (Note: All the contents of the USB drive will be erased.)
+     - In the `boot selection` drop down, select your ISO image you downloaded earlier.
+     - Click start, Rufus will format your USB so that Windows will recognize it as a bootable device. This may take serveral minutes.
