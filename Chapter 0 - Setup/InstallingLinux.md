@@ -1,4 +1,4 @@
-In my specific case, I'm using a Dell XPS 15 7590 from 2019. There were a few hick ups along the way, but that's what google search is for. We are going to need Ubuntu 20.04 for this.
+In my specific case, I'm using a Dell XPS 15 7590 from 2019. There were a few hick ups along the way, but that's what google search is for. We are going to need Ubuntu install 20.04 for this.
 
 What I Tried First:
  
@@ -16,4 +16,11 @@ The Solution that Worked, but Needed a Little Assistance:
      - Install a program called [Rufus](https://rufus.ie/en/).
      - Once Rufus has installed, open it. In the GUI make sure you select your USB that you want to install the Ubuntu Image on. (Note: All the contents of the USB drive will be erased.)
      - In the `boot selection` drop down, select your ISO image you downloaded earlier.
-     - Click start, Rufus will format your USB so that Windows will recognize it as a bootable device. This may take serveral minutes.
+3. While Rufus is doing its thing, there's a very important step we have to do, disable BitLocker. 
+   - The best way to do this is from the command line. Launch the command line in administrator mode.
+   - Then type the following: `manage-bde -odd C:` (Note: Repalce "C:" with the name of your drive that holds windows.).
+   - If it says that it needs your encryption key, [Click here](https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) for steps on how to find it. You may need to input it after "C:" in the command above, I did not in my case.
+   - Your device should now start decrypting your drive. This will take a bit, but should take around the same amount of time as Rufus. Go get a coffee and a donut, I prefer Honey Cruelers as my go to.
+   - At any time, you can check on your BitLocker status by typing `manage-bde -status` in the command line. Look for `Conversion Status`, if that says `Fully Decrypted` then you're good to go!
+4. Once your decryption has finished and Rufus has finished doing its thing, we are ready to restart your computer. Make sure the USB device stays pluged when you restart. You'll need to mash your boot manager BIOS startup key in order to open into the Boot Manager menu. For my specific case its the `F12` key, yours may be another function key or `ESC` or `Delete`. Look for this online before you restart, otherwise you may end up restarting multiple times trying to find the right key.
+   - Make sure you follow all the prompts when you launch into the Ubuntu Installer. We want to install along side windows, if you choose another option, you may risk wiping your drive. Make sure to select `Install Ubuntu` rather than `Try Ubuntu`.
