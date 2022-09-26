@@ -1,0 +1,1 @@
+Now we want to make sure that our local machine can communicate with the turtlebot laptop. This is so we can run commands, and launch programs without having to be directly tied to the turtlebot (onyl virtually).
