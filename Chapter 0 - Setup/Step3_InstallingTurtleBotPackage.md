@@ -6,3 +6,5 @@ Note: Once again, all of this is to be done in the Terminal.
    - `sudo apt-get install python3-rosdep python3-wstool ros-noetic-ros`
    - `rosdep update`
    - `mkdir ~/rocon`
+     - I've decided to call the folder in which I will be working "rocon", this is simply becaus it's what the tutorial told me. You can name this anything you'd like, as long as you remember what it is, and put that in rather than "rocon" if you see it in a command.
+   - Now, what we want to do is run [this make file](../"Chapter 0 - Setup"/makefile) inside you folder. Simply download it, move it into your folder, then navigate to this folder in your command line, and type 'make'. This will automatically download all the required libraries into this folder.
