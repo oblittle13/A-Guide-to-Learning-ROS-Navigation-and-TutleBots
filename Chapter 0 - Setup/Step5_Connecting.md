@@ -1,0 +1,1 @@
+Now comes the important part, actually connecting to the TurtleBot. I followed [this tutorial](http://wiki.ros.org/turtlebot_bringup/Tutorials/indigo/TurtleBot%20Bringup). A few things weren't the greatest about it. So I've altered a few things, to make things easier for beginners to understand.
