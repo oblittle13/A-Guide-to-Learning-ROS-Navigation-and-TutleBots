@@ -1,4 +1,4 @@
-Now we want to make sure that our local machine can communicate with the TurtleBot laptop. This is so we can run commands, and launch programs without having to be directly tied to the turtlebot (onyl virtually). [These steps were derived from here](http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration).
+Now we want to make sure that our local machine can communicate with the TurtleBot laptop. This is so we can run commands, and launch programs without having to be directly tied to the turtlebot (only virtually). [These steps were derived from here](http://wiki.ros.org/turtlebot/Tutorials/indigo/Network%20Configuration).
 
 1. First things first, make sure both your local machine and the TurtleBot are connected to the internet. Otherwise, this step is impossible.
 2. Now, on both machines we need to find out what their IP address is. To do this type 'hostname -I' into the command line.
